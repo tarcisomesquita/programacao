@@ -18,7 +18,6 @@ kinds of variables:
 all variables must first be declared before they can be used.
 int gear = 1;
 
-
 boolean    valor true ou false
 char       16-bit,(caractere UNICODE) faixa: 0 a 65535.
 byte       8-bit , complemento de 2,  faixa:-128 até 127
@@ -28,27 +27,14 @@ long       64-bit, compl. de 2,       faixa:-9223372036854775808 até 9223372036
 float      32-bit  Ponto flutuante  IEEE754  faixa: +/-3.40282347E+38F  ex.: 1.380658e-23
 double     64-bit  Ponto flutuante  IEEE754  faixa: +/-1.79769313486231570E+308
 
-Static methods like compareUnsigned, divideUnsigned etc have been added to the Integer class to support the arithmetic operations for unsigned integers.
-The Long class also contains methods like compareUnsigned, divideUnsigned etc to support arithmetic operations for unsigned long.
-
 for precise values, such as currency, use java.math.BigDecimal
 
-the compiler never assigns a default value to an uninitialized local variable.
-
-A literal is the source code representation of a fixed value
-boolean result = true;
-
-
-// The number 26, in decimal
-int decVal = 26;
-//  The number 26, in hexadecimal
-int hexVal = 0x1a;
-// The number 26, in binary
-int binVal = 0b11010;
+int decVal = 26;      // in decimal
+int hexVal = 0x1a;    //  in hexadecimal
+int binVal = 0b11010; // in binary
 
 double d1 = 123.4;
-// same value as d1, but in scientific notation
-double d2 = 1.234e2;
+double d2 = 1.234e2; // same value as d1, but in scientific notation
 float f1  = 123.4f;
 
 you can use the underscore in numeric literals:
@@ -62,7 +48,6 @@ byte nybbles = 0b0010_0101;
 long bytes = 0b11010010_01101001_10010100_10010010;
 int x3 = 5_______2;
 int x6 = 0x5_2; 
-
 
 boolean deuCerto;
 deuCerto = true;
@@ -79,8 +64,6 @@ char umCaracter = 'A';
 \xxx    caracter com código de valor octal xxx, que pode assumir valores entre 000 e 377 na representação octal
 \uxxxx  caracter Unicode com código de valor hexadecimal xxxx, onde xxxx pode assumir valores entre 0000 e ffff na representação hexadecimal.
 
-
-
 int idade;
 String nome = new String("João");
 String teste = "isso é um teste";
@@ -91,8 +74,7 @@ nome.equals(teste);
 
 Valores literais: Um valor como 299792458 é considerado int como padrão, se você quer atribuir esta constante a um long, faça o "type cast" explicitamente:
 long a;
-a=(long)299792458; //a recebe PI
-
+a = (long)299792458;
 long valorQuePodeCrescer = 100L;
 
 octais anteceda-os com um zero: 0444
@@ -104,7 +86,6 @@ final double TEMPERATURA = 25.4;
 final torna TEMPERATURA uma constante
 
 double y = Math.pow (x, b); // x é elevado a b
-
 
 int[] vetor = new int[100];
 int[] impares = {2,3,5,7,9,11,13}
