@@ -1,7 +1,7 @@
-public class mainPonto {
+public class MainPonto {
 	public float x,y;
-	public mainPonto(float ax,float ay) {
-		this.x = ax; this.y = ay;
+	public MainPonto(float x,float y) {
+		this.x = x; this.y = y;
 	}
 
 	public void move(float dx,float dy) {
