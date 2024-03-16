@@ -3,7 +3,7 @@
 
 public class Main {
 	public static void main(String args[]) {
-		MainPonto pontoOriginal = new MainPonto((float)0.0, 0.0f);                  //(float)0.0 ou 0.0f; 0.0 eh double
+		MainPonto pontoOriginal = new MainPonto((float)0.0, 0.0f);                 // (float)0.0 ou 0.0f; 0.0 eh double
 		MainPonto pontoAlias    = pontoOriginal;                                   // copiando através de atribuicão (ambos estão no mesmo endereço)
 		MainPonto pontoCopia    = new MainPonto(pontoOriginal.x, pontoOriginal.y); // copiando atributo por atributo (são escritos em outro endereço)
 		
