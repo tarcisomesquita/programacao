@@ -16,7 +16,7 @@ public class MainPonto {
 		System.out.println("("+this.x+","+this.y+")");
 	}
 
-	public boolean igual(mainPonto outro) {
+	public boolean igual(MainPonto outro) {
 		return ((outro.x == this.x) && (outro.y == this.y)); // this == outro?
 	}
 }
