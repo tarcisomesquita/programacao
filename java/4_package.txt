@@ -1,3 +1,14 @@
+du -chs /usr/lib/jvm/* | sort -h
+258M    /usr/lib/jvm/java-17-openjdk-amd64
+
+/media/arq/eclipse/java-2023-12/eclipse/eclipse
+
+/media/arq/eclipse/eclipse-workspace/projetoInicial/src/uninter/Principal.java
+/media/arq/eclipse/eclipse-workspace/projetoTeste/src/teste/Teste.java
+/media/arq/eclipse/eclipse-workspace/projetoTeste/src/teste2/Teste2.java
+
+nomeProjeto/src/nomePackage/nomeClasse
+
 https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
 
 Packages são conjuntos de classes e interfaces.
@@ -8,6 +19,8 @@ O compilador sabe achar uma classe se ela estiver no diretório de seu programa.
 
 A instrução import permite utilizar uma classes definida em outro pacote.
 
+import java.lang.System;
+import java.io.*;
 
 Packages Principais
 
@@ -31,6 +44,14 @@ Pacote que provê um conjunto de manipulações de interfaces para o usuário ta
 ✔ java.applet
 Pacote que habilita a criação de applets através da classe applet. Também prove recursos de áudio.
 Principais métodos da classe Applet : destroy, getParameter, init, play, resize, showStatus, start, stop
+
+javac -verbose -deprecation  Teste.java
+[search path for class files: /usr/lib/jvm/java-17-openjdk-amd64/lib/modules,.]
+[loading /modules/java.base/java/lang/Object.class]
+[loading /modules/java.base/java/lang/String.class]
+
+ls -lh /usr/lib/jvm/java-17-openjdk-amd64/lib/modules 
+-rw-r--r-- 1 root root 123M Jan 30 20:08 /usr/lib/jvm/java-17-openjdk-amd64/lib/modules
 
 Usando javac -verbose -deprecation e04_GeometriaPrograma.java
 /home/ubuntu/Desktop/jdk1.6.0_26/jre/lib/resources.jar,
